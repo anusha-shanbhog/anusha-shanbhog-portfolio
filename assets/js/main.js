@@ -40,7 +40,7 @@ let swiperProjects = new Swiper(".projects__container", {
     },
     breakpoints: {
         1200: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: -56,
         },
     },

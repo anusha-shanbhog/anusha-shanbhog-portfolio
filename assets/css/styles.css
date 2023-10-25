@@ -77,8 +77,8 @@ body {
 }
 
 h1, h2, h3 {
-  color: var(--title-color);
-  font-family: var(--title-font);
+  color: rgb(223, 234, 255);
+  
   font-weight: var(--font-medium);
 }
 
@@ -150,6 +150,9 @@ body.dark-theme{
   background-color: hsl(207, 4%, 35%);
 }
 
+
+
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
@@ -166,7 +169,7 @@ body.dark-theme{
 }
 
 .section__border {
-  border-bottom: 1px solid var(--title-color);
+  border-bottom: rgb(223, 234, 255);
   padding-bottom: 3.5rem;
 }
 
@@ -409,6 +412,7 @@ body.dark-theme{
 .skills__title i{
   font-size: 1rem;
   font-weight: initial;
+  color: rgb(223, 234, 255);
 }
 
 .skills__info,
@@ -418,8 +422,8 @@ body.dark-theme{
 }
 
 .skills__info{
-  grid-template-columns: repeat(6, 1fr);
-  gap: 2.5rem 2rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem 1rem;
 }
 
 .skills__data{
@@ -444,6 +448,7 @@ body.dark-theme{
 .skills__name{
   font-size: var(--small-font-size);
   margin-bottom: .25rem;
+  color: white!important;
 }
 
 .skills__subtitle{
@@ -453,7 +458,7 @@ body.dark-theme{
 
 /* Animation skills */
 .skills__blob:hover img{
-  animation: bounce-skills .6s;
+ 
 }
 
 @keyframes bounce-skills{
@@ -484,112 +489,7 @@ body.dark-theme{
         transform: translateY(0);
     }
 }
-/*=============== QUALIFICATION ===============*/
-.qualification{
-  position: relative;
-}
 
-.qualification__container{
-  row-gap: 3.5rem;
-}
-
-.qualification__title{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: .5rem;
-  font-size: var(--small-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 2rem;
-}
-
-.qualification__title i{
-  font-size: 1rem;
-  font-weight: initial;
-}
-
-.qualification__info{
-  display: grid;
-  row-gap: 2rem;
-}
-
-.qualification__name{
-  font-size: var(--normal-font-size);
-  margin-bottom: 1.25rem;
-}
-
-.qualification__country,
-.qualification__year{
-  display: block;
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.qualification__country{
-  margin-bottom: .75rem;
-}
-
-.qualification__img{
-  width: 150px;
-  position: absolute;
-  right: -3rem;
-  bottom: 12rem;
-  transform: rotate(15deg);
-  opacity: .1;
-}
-
-/*=============== ACHIEVEMENTS ===============*/
-.achievements__container{
-  row-gap: 2.5rem;
-  justify-content: center;
-}
-
-.achievements__card{
-  position: relative;
-  width: 228px;
-  height: 322px;
-  background-color: var(--container-color);
-  text-align: center;
-  padding: 3.5rem 1rem;
-  border-radius: 7.25rem;
-  transition: background .4s;
-}
-
-.achievements__card i{
-  display: block;
-  font-size: 2rem;
-  color: var(--title-color);
-  margin-bottom: .75rem;
-  transition: transform .8s;
-}
-
-.achievements__title{
-  font-size: var(--h2-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: 1.5rem;
-}
-
-.achievements__border{
-  width: 248px;
-  height: 342px;
-  border: 1.8px solid var(--text-color-light);
-  border-radius: 7.75rem;
-  position: absolute;
-  inset: 0;
-  left: -10px;
-  margin: auto;
-  z-index: -1;
-  transition: opacity .6s;
-  opacity: 0;
-}
-
-.achievements__card:hover i{
-  transform: rotate(360deg);
-}
-
-.achievements__card:hover .achievements__border{
-  opacity: 1;
-}
 
 /*=============== PROJECTS ===============*/
 .projects__container{
@@ -603,7 +503,7 @@ body.dark-theme{
 
 .projects__img{
   width: 250px;
-  border-radius: .75rem;
+
   margin-bottom: 1.25rem;
 }
 
@@ -680,7 +580,9 @@ body.dark-theme{
 /*=============== TESTIMONIAL ===============*/
 
 
-/* Swiper class */
+
+
+
 
 
 /*=============== CONTACT ===============*/
@@ -710,11 +612,11 @@ body.dark-theme{
 }
 
 .contact__info{
-  row-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .contact__data{
-  row-gap: .75rem;
+  row-gap: .25rem;
 }
 
 .contact__data-title{
@@ -761,9 +663,9 @@ body.dark-theme{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   border: 2px solid var(--text-color-light);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: 1.5rem;
   font-size: var(--normal-font-size);
   font-family: var(--title-font);
@@ -797,7 +699,7 @@ body.dark-theme{
   border: none;
   background: none;
   font-size: var(--h2-font-size);
-  font-family: var(--title-font);
+ 
   font-weight: var(--font-semi-bold);
   cursor: pointer;
   outline: none;
@@ -857,7 +759,7 @@ body.dark-theme{
 }
 
 .footer__social{
-  column-gap: 1.25rem;
+  column-gap: 0.5rem;
 }
 
 .footer__social-link{
@@ -1029,7 +931,7 @@ body.dark-theme{
   }
 
   .contact__form{
-    width: 360px;
+    width: 100%;
   }
 
   .contact__container{
@@ -1306,12 +1208,12 @@ body.dark-theme{
   }
 
   .footer__list{
-    column-gap: 3rem;
-    margin: 3rem 0;
+    column-gap: 2rem;
+    margin: 2rem 0;
   }
 
   .footer__social{
-    column-gap: 2rem;
+    column-gap: 1rem;
   }
 
   .footer__social-link{
@@ -1323,3 +1225,40 @@ body.dark-theme{
   }
 
 }
+/* Default styles for the two-column layout */
+.home__data.grid {
+  display: flex;
+  justify-content: space-between;
+  margin: 0; /* Remove any margins */
+}
+
+.column-left {
+  flex: 1; /* Use flex to distribute space equally */
+  text-align: left; /* Ensure text alignment to the left */
+}
+
+.column-right {
+  flex: 1; /* Use flex to distribute space equally */
+  margin: 0 1em; /* Add left and right margins to the image */
+  text-align: center; /* Center align the content within the column */
+}
+
+/* Set a fixed width for the image */
+.column-right img {
+  width: 100%; /* Set the width to 100% to keep the original image size */
+  max-width: 100%; /* Set a maximum width to ensure the image doesn't exceed the container size */
+}
+
+/* Media query for screens with a maximum width of 768px (adjust as needed) */
+@media (max-width: 768px) {
+  .home__data.grid {
+    flex-direction: column; /* Change to a single column layout */
+    align-items: center; /* Center align the items */
+  }
+
+  .column-left, .column-right {
+    width: 100%; /* Take the full width of the container */
+    margin: 0; /* Remove any margins */
+  }
+}
+
