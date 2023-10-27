@@ -236,6 +236,7 @@ body.dark-theme{
   .nav__menu{
     position: fixed;
     width: 88%;
+    margin-left:0%!important;
     left: 0;
     right: 0;
     bottom: -60%;
@@ -419,11 +420,17 @@ body.dark-theme{
 .skills__data,
 .skills__blob{
   display: grid;
+ 
 }
 
 .skills__info{
   grid-template-columns: repeat(7, 1fr);
   gap: 1rem 1rem;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
 }
 
 .skills__data{
@@ -499,6 +506,7 @@ body.dark-theme{
 .projects__content{
   display: grid;
   justify-content: center;
+  
 }
 
 .projects__img{
@@ -851,10 +859,42 @@ body.dark-theme{
   }
 
 }
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column1 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    width:79%!important;
+  }
+  .column2 {
+    
+    width: 72%!important; /* Set the width to 100% to match the image width */
+    max-width: 440px; /* Limit the maximum width to the image width */
+   
+  }
+  .swiper-button-next{
+margin-top: 15vw!important;
+  }
+  .swiper-button-prev{
+    margin-top:15vw!important;
+  }
+}
+
 
 /* For medium devices */
 @media screen and (min-width: 576px){
-  
+  .projects__content{
+    display: grid;
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+flex-wrap: wrap;
+    
+  }
+
   .nav,
   .nav__menu{
     width: 380px;
@@ -1245,8 +1285,7 @@ body.dark-theme{
 
 /* Set a fixed width for the image */
 .column-right img {
-  width: 100%; /* Set the width to 100% to keep the original image size */
-  max-width: 100%; /* Set a maximum width to ensure the image doesn't exceed the container size */
+  /* Set a maximum width to ensure the image doesn't exceed the container size */
 }
 
 /* Media query for screens with a maximum width of 768px (adjust as needed) */
